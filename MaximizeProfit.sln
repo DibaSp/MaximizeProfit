@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximizeProfit.Lib", "Maxim
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximizeProfit.Lib.Tests", "MaximizeProfitLibTests\MaximizeProfit.Lib.Tests.csproj", "{6CF9AF21-6820-4606-8109-60C86426F712}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximizeProfit.WebApi", "MaximizeProfitWebApi\MaximizeProfit.WebApi.csproj", "{E7D38B4B-1856-4C47-8F59-1644D82229B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

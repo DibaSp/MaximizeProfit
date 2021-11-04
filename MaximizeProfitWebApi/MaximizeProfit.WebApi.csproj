@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>9fb2037c-c48f-4765-869b-f30be3e3146b</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MaximizeProfitLib\MaximizeProfit.Lib.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="$(SolutionDir)data\**" 
+      CopyToOutputDirectory="PreserveNewest"
+      LinkBase="data\" />
+  </ItemGroup>
+
+
+</Project>

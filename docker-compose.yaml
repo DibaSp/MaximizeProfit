@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: MaximizeProfitWebApi/Dockerfile # the Dockerfile is stored in the API project
+    ports:
+      - "80:80"
