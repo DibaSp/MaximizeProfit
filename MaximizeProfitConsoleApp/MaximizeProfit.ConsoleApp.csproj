@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MaximizeProfitLib\MaximizeProfit.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="$(SolutionDir)order_books_data">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(SolutionDir)data\**" 
+      CopyToOutputDirectory="PreserveNewest"
+      LinkBase="data\" />
+  </ItemGroup>
+
+</Project>
